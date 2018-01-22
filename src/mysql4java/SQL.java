@@ -87,7 +87,10 @@ public final class SQL extends funciones {
                     for (int i = 1; i <= rs.getMetaData().getColumnCount(); i++) 
                     {
                         hmap.put(rs.getMetaData().getColumnName(i), rs.getObject(i));
+                      
+                  
                     }
+                       System.out.println(hmap.clone());
                 }
 
             }
@@ -95,6 +98,7 @@ public final class SQL extends funciones {
             JOptionPane.showMessageDialog(null, ex.getMessage());
             hmap = null;
         }
+       
         return hmap;
     }
 }

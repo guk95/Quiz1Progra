@@ -104,9 +104,7 @@ public final class MySQL4Java extends JFrame {
 
             HashMap<String, Object> result = sql.SELECT("SELECT `id`,`Nombre_product`,`Cantidad`,`Precio_unitario` FROM `Mario_QuizInventario`", arr);
 
-            System.out.println("La id es: " + result.get("id") + " El nombre del producto es:  "
-                    + result.get("Nombre_product") + " La cantidad es:  " + result.get("Cantidad")
-                    + " El preccio unitario es:  " + result.get("Precio_unitario"));
+       
 
         } catch (Exception e) {
             System.out.println("Su programa no sirve");
